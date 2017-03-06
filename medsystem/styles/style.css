@@ -1,0 +1,397 @@
+/*global*/
+html,
+body {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 20px;
+	background-color: #EDFAF8;
+	color: #008080;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.global-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.header-main-wrapper {
+    display: table-row;
+    height: 100%;
+}
+
+.hf-bg {
+    padding: 10px;
+	background-color: #008080;
+	color: #EDFAF8;	
+}
+
+.brd {
+     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.error {
+    width: 80%;
+    margin: 20px auto !important;
+    background-color: #D8BFD8;
+    text-align: center;
+}
+
+.message {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: rgba(50, 205, 50, 0.3);
+}
+
+.header {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: 4px -2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*common*/
+.positioner {
+    margin: 0 auto;
+}
+
+.clear:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+.block {
+    display: block;
+}
+
+/*header*/
+.header-content {
+    margin: 30px 20px;
+    padding: 10px;
+}
+
+.header-content-left {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+.header-content-right {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+/*header-logo*/
+.hx {
+	font-weight: normal;
+    margin: 0;
+}
+
+.version {
+	vertical-align: sub;
+	font-size: 16px;
+	font-style: italic;	
+}
+
+/*header-navigation*/
+.nav {
+    position: absolute;
+    left: 80%;
+    top: 45px;
+}
+
+.nav ul {
+    padding: 0;
+}
+
+.nav ul li span {
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav ul li:hover span {    
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+}
+
+.nav ul li:hover ul {    
+    display: block;
+}
+
+.nav ul ul {
+    display: none;
+    position: relative;
+    right: 75%;
+    padding: 0;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.nav-btn {
+    padding: 20px 10px;
+    text-align: center;
+    color: #EDFAF8;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #EDFAF8;
+    color: #008080;
+}
+
+.nav ul ul li:first-child .nav-btn {
+    border-radius: 5px 5px 0 0;
+}
+
+.nav ul ul li:last-child .nav-btn {
+    border-radius: 0 0 5px 5px;
+}
+
+.nav-btn-only {
+    border-radius: 5px !important;
+}
+
+/*main*/
+.main-content {
+    margin: 20px 40px;
+    padding: 20px; 
+}
+
+.welcome-label {
+	width: 40%;
+    min-width: 400px;
+	margin-bottom: 15px;
+	margin-left: 100px;
+    padding: 5px;
+}
+
+.main-content-center {
+    width: 20%;
+    min-width: 350px;
+}
+
+.no-auth {
+    margin-top: 80px;
+    width: 80%;
+    text-align: center;
+}
+
+.no-auth span {
+    font-size: 28px;
+}
+
+.main-content-left {
+    width: 30%;
+    min-width: 260px;
+    margin-left: 60px;
+    margin-right: 20px;
+    padding: 10px;   
+}
+
+.content-window {
+    margin-top: 40px;
+    padding: 20px 10px;
+    border-radius: 10px;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.option-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.option-list ul li {
+    display: block;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    width: 240px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid #008080;
+	border-radius: 5px;
+	text-align: center;
+    text-decoration: none;
+    background-color: #D7FDFD; 
+	color: #008080;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+	background-color: #008080 !important;
+	color: white !important;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: #E6E6E6;
+    border-color: #B5B5B5; 
+	color: #B5B5B5;
+}
+
+.btn:disabled:hover {
+    background-color: #E6E6E6 !important;
+    border-color: #B5B5B5 !important; 
+	color: #B5B5B5 !important;
+}
+
+.main-content-right {
+    width: 50%;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+/*form*/
+.form {
+    width: 389px;
+    min-width: 389px;
+    padding: 20px;
+}
+
+.form-name {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.form-name p {   
+    margin: 0;
+    font-size: 22px;
+}
+
+.form-input, .form-buttons {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.form-input input, .form-input select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4px 10px;
+	border: 2px solid #008080;
+	border-radius: 5px;
+	cursor: pointer;
+    font-size: 18px;
+    color: #004040;
+}
+
+.form-input select {
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+}
+
+.date-input .left-float {
+    margin-right: 16px;
+}
+
+.date-input input, .date-input select  {
+    width: 30%;
+}
+
+.app-date-input input, .app-date-input select  {
+    width: 45%;
+}
+
+.form-buttons .btn {
+    width: 100px;
+    font-size: 16px;
+}
+
+
+.login {
+    width: 310px;
+    min-width: 310px;
+}
+
+
+/*footer*/
+.copyright {
+    margin: 5px 20px 5px 100px;
+}
+
+.bmstu {
+    margin-left: 20px;
+    padding: 10px;
+    float: left;
+}
+
+.copyright-content {
+    margin-right: 20px;
+    padding: 10px;
+    float: left;
+}
+
+.copyright-content p {
+    text-align: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/*for accounts*/
+.nonoptlist {
+    width: 100%;
+}
+
+.account {
+    width: 100%;
+    color: #004040;
+    border: 1px solid #008080;
+    border-collapse: collapse;
+}
+
+.account caption {
+    margin-bottom: 20px;
+}
+
+.account-hdrs {
+    border-bottom: 1px solid #008080;
+}
+
+.account tr td {
+    width: 20%;
+    border-right: 1px solid #008080;
+    padding: 20px;
+    text-align: center;
+}
+
+.account tr:nth-child(even) {
+    background-color: #FFFACD;
+}
